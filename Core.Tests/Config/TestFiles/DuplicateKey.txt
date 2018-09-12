@@ -1,0 +1,4 @@
+﻿Server=ServerName
+Port=1234
+Name=AName
+Server=DifferentServerName

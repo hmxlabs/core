@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+	<title>HMx Labs Core</title>
+    <id>HmxLabs.Core</id>
+    <version>$version$</version>
+    <authors>HMx Labs: Hamza Mian</authors>
+	<iconUrl>http://hmxlabs.uk/assets/icons/64x64/core.svg</iconUrl>
+	<owners>hmxlabs</owners>
+	<description>Core functionality used by multiple HMx Labs projects</description>
+	<copyright>Copyright HMx Labs Limited 2017 - 2018</copyright>
+	<requireLicenseAcceptance>false</requireLicenseAcceptance>
+	<licenseUrl>http://hmxlabs.uk/software/license.html</licenseUrl>
+	<projectUrl>http://hmxlabs.uk/software/</projectUrl>
+  </metadata>
+  <files>
+    <file src=".\Build\Output\Release\Core\HmxLabs.Core.dll" target="lib\net45" />
+	<file src=".\Build\Output\Release\Core\HmxLabs.Core.pdb" target="lib\net45" />
+	<file src=".\Build\Output\Release\Core\HmxLabs.Core.xml" target="lib\net45" />
+  </files>
+</package>

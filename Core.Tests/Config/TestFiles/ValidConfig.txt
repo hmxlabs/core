@@ -1,0 +1,11 @@
+﻿# This is a comment line and should be ignored
+Server=AServerName
+Port=1234
+Tolerance=0.05
+# Another comment and a space
+
+Path=/etc/fst/sample.conf
+AnotherPath=C:\Program Files (x86)\FST\sample.conf
+
+# A line that has = chars... 
+ConnectionString=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Data\Db\TestData.accdb

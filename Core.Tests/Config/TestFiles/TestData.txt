@@ -1,0 +1,8 @@
+﻿test.string.value=This is a random string that won't parse as an int or a double
+test.string.null.value= 
+test.string.empty.value= 
+test.int.value=123
+test.double.value=101.1
+test.bool.true=true
+test.bool.false=false
+test.bool.invalid=hello

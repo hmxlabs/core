@@ -1,0 +1,2 @@
+﻿TheFirstKey=This line is fine
+AnotherKey: This line is broken
