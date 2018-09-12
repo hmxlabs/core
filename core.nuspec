@@ -3,7 +3,7 @@
   <metadata>
 	<title>HMx Labs Core</title>
     <id>HmxLabs.Core</id>
-    <version>$version$</version>
+    <version>0.1.0</version>
     <authors>HMx Labs: Hamza Mian</authors>
 	<iconUrl>http://hmxlabs.uk/assets/icons/64x64/core.svg</iconUrl>
 	<owners>hmxlabs</owners>
