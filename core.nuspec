@@ -3,19 +3,22 @@
   <metadata>
 	<title>HMx Labs Core</title>
     <id>HmxLabs.Core</id>
-    <version>0.1.0</version>
+    <version>0.2.0</version>
     <authors>HMx Labs: Hamza Mian</authors>
 	<iconUrl>http://hmxlabs.uk/assets/icons/64x64/core.svg</iconUrl>
 	<owners>hmxlabs</owners>
 	<description>Core functionality used by multiple HMx Labs projects</description>
-	<copyright>Copyright HMx Labs Limited 2017 - 2018</copyright>
+	<copyright>Copyright HMx Labs Limited 2017 - 2023</copyright>
 	<requireLicenseAcceptance>false</requireLicenseAcceptance>
 	<licenseUrl>http://hmxlabs.uk/software/license.html</licenseUrl>
 	<projectUrl>http://hmxlabs.uk/software/</projectUrl>
+	<dependencies>
+		<group targetFramework=".NETFramework4.8.1" />
+	</dependencies>
   </metadata>
   <files>
-    <file src=".\Build\Output\Release\Core\HmxLabs.Core.dll" target="lib\net45" />
-	<file src=".\Build\Output\Release\Core\HmxLabs.Core.pdb" target="lib\net45" />
-	<file src=".\Build\Output\Release\Core\HmxLabs.Core.xml" target="lib\net45" />
+    <file src=".\Build\Output\Release\Core\HmxLabs.Core.dll" target="lib\net481" />
+	<file src=".\Build\Output\Release\Core\HmxLabs.Core.pdb" target="lib\net481" />
+	<file src=".\Build\Output\Release\Core\HmxLabs.Core.xml" target="lib\net481" />
   </files>
 </package>

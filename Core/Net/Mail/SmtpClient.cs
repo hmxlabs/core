@@ -6,12 +6,12 @@ namespace HmxLabs.Core.Net.Mail
     /// <summary>
     /// An implementation of the the <code>ISmtpClient</code> interface
     /// that actually is just the <code>System.Net.Mail.SmtpClient</code>
-    /// but exposes the additional properties required to fulfull <code>ISmtpClient</code>
+    /// but exposes the additional properties required to fulfill <code>ISmtpClient</code>
     /// </summary>
     public class SmtpClient : System.Net.Mail.SmtpClient, ISmtpClient
     {
         /// <summary>
-        /// Constuct an instance of the <code>ISmtpClient</code> using the
+        /// Construct an instance of the <code>ISmtpClient</code> using the
         /// provided configuration.
         /// </summary>
         /// <exception cref="ArgumentNullException">If the provided configuration is <code>null</code></exception>

@@ -17,7 +17,7 @@ namespace HmxLabs.Core.Net.Mail
         /// Constructs an instance of this class using the provided <code>ISmtpClient</code>
         /// and <code>MailSenderConfiguration</code>.
         /// </summary>
-        /// <param name="config_">The configruation information. If an <code>ISmtpClient</code> is not provided this must contain the necessary config to create one</param>
+        /// <param name="config_">The configuration information. If an <code>ISmtpClient</code> is not provided this must contain the necessary config to create one</param>
         /// <param name="smtpClient_">The SMTP client to use or null to create and use an instance of <code>SmtpClient</code></param>
         public MailSender(IMailSenderConfig config_, ISmtpClient smtpClient_ = null)
         {
@@ -34,7 +34,7 @@ namespace HmxLabs.Core.Net.Mail
         }
 
         /// <summary>
-        /// Destructor. Should never need to be callsed as this object should be disposed of. Will only be invoked
+        /// Destructor. Should never need to be called as this object should be disposed of. Will only be invoked
         /// if the Dispose method was not called when.
         /// </summary>
         ~MailSender()
@@ -70,9 +70,9 @@ namespace HmxLabs.Core.Net.Mail
         public string Password => _config.Password;
 
         /// <summary>
-        /// The username and passowrd credentials required to connect to the SMTP server.
+        /// The username and password credentials required to connect to the SMTP server.
         /// When provided these are analagous to the <code>Username</code> and
-        /// <code>Passowrd</code> fields
+        /// <code>Password</code> fields
         /// </summary>
         public NetworkCredential UserCredentials => _config.UserCredentials;
 
@@ -84,7 +84,7 @@ namespace HmxLabs.Core.Net.Mail
         public MailAddress Sender => _config.Sender;
 
         /// <summary>
-        /// Equivalent to <code>Sender.Address</code>. This is a convencience property
+        /// Equivalent to <code>Sender.Address</code>. This is a convenience property
         /// for shorthand.
         /// </summary>
         public string SenderAddress => _config.SenderAddress;
@@ -96,7 +96,7 @@ namespace HmxLabs.Core.Net.Mail
         public string SenderName => _config.SenderName;
 
         /// <summary>
-        /// Whether to enable SSL/TLS for the connecton to the SMTP server
+        /// Whether to enable SSL/TLS for the connection to the SMTP server
         /// </summary>
         public bool EnableSsl => _config.EnableSsl;
 

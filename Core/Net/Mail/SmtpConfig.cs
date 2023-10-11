@@ -113,13 +113,13 @@ namespace HmxLabs.Core.Net.Mail
             : this(server_, port_, new NetworkCredential(userName_, password_), enableSsl_)
         {
             if (null == userName_)
-                throw new ArgumentNullException("userName_");
+                throw new ArgumentNullException(nameof(userName_));
 
             if (string.IsNullOrWhiteSpace(userName_))
                 throw new ArgumentException("No username specified", nameof(userName_));
 
             if (null == password_)
-                throw new ArgumentNullException("password_");
+                throw new ArgumentNullException(nameof(password_));
 
             if (string.IsNullOrWhiteSpace(password_))
                 throw new ArgumentException("No password specified", nameof(password_));
@@ -197,15 +197,15 @@ namespace HmxLabs.Core.Net.Mail
         /// <summary>
         /// Utility property that returns <code>UserCredentials.Username</code>
         /// </summary>
-        public string Username { get { return UserCredentials?.UserName; } }
+        public string Username => UserCredentials?.UserName;
 
         /// <summary>
         /// Utility property that returns <code>UserCredentals.Password</code>
         /// </summary>
-        public string Password { get { return UserCredentials?.Password; } }
+        public string Password => UserCredentials?.Password;
 
         /// <summary>
-        /// Read onlu property specifying if a secure connection should be used
+        /// Read only property specifying if a secure connection should be used
         /// </summary>
         public bool EnableSsl { get; } = DefaultEnableSsl;
 
